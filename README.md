@@ -55,11 +55,15 @@ git push -u origin main
 
 ## Analytics Setup
 
-`script.js` 상단의 아래 placeholder 값을 실제 값으로 바꾸면 됩니다.
+현재 아래 값이 적용되어 있습니다.
 
-- `ga4MeasurementId`: 예시 `G-XXXXXXXXXX`
-- `hotjarSiteId`: 예시 `1234567`
-- `hotjarVersion`: 기본값 `6`
+- `ga4MeasurementId`: `G-46PFKJ6VC0`
+- `behaviorAnalyticsScriptUrl`: `https://t.contentsquare.net/uxa/7bb3c51d7d1e7.js`
+
+참고:
+
+- 전달받은 스크립트는 표준 Hotjar 스니펫이 아니라 `Contentsquare` 스크립트 URL입니다.
+- 그래서 현재는 사용자 제공 스크립트를 그대로 로드하도록 적용했습니다.
 
 현재 추적되는 이벤트:
 

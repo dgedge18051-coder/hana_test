@@ -1,7 +1,6 @@
 const analyticsConfig = {
-  ga4MeasurementId: "G-XXXXXXXXXX",
-  hotjarSiteId: "HOTJAR_SITE_ID",
-  hotjarVersion: 6,
+  ga4MeasurementId: "G-46PFKJ6VC0",
+  behaviorAnalyticsScriptUrl: "https://t.contentsquare.net/uxa/7bb3c51d7d1e7.js",
 };
 
 const header = document.querySelector(".site-header");
@@ -41,36 +40,22 @@ function initGA4() {
   });
 }
 
-function initHotjar() {
-  if (!hasRealValue(analyticsConfig.hotjarSiteId, "HOTJAR_SITE_ID")) {
+function initBehaviorAnalytics() {
+  if (
+    !hasRealValue(
+      analyticsConfig.behaviorAnalyticsScriptUrl,
+      "https://example.com/behavior-analytics.js"
+    )
+  ) {
     return;
   }
 
-  (function hotjarLoader(h, o, t, j, a, r) {
-    h.hj =
-      h.hj ||
-      function hotjarProxy() {
-        (h.hj.q = h.hj.q || []).push(arguments);
-      };
-    h._hjSettings = {
-      hjid: Number(analyticsConfig.hotjarSiteId),
-      hjsv: analyticsConfig.hotjarVersion,
-    };
-    a = o.getElementsByTagName("head")[0];
-    r = o.createElement("script");
-    r.async = true;
-    r.src = `${t}${h._hjSettings.hjid}${j}${h._hjSettings.hjsv}`;
-    a.appendChild(r);
-  })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+  loadScript(analyticsConfig.behaviorAnalyticsScriptUrl);
 }
 
 function trackEvent(eventName, params = {}) {
   if (typeof window.gtag === "function") {
     window.gtag("event", eventName, params);
-  }
-
-  if (typeof window.hj === "function") {
-    window.hj("event", eventName);
   }
 }
 
@@ -178,4 +163,4 @@ signupForm.querySelectorAll("input").forEach((input) => {
 });
 
 initGA4();
-initHotjar();
+initBehaviorAnalytics();
