@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://hana-test-9a12.vercel.app/sitemap.xml
