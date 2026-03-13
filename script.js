@@ -118,10 +118,11 @@ function applyContextToForm(form, source, offerType = "early_access") {
     }
   });
 
+  const subject = `[Farm-tner Lead] ${source || "unknown_cta"} | ${window.location.pathname}`;
   const summaryLines = [
+    `Page URL: ${window.location.href}`,
     `CTA Source: ${source || "unknown_cta"}`,
     `Offer Type: ${offerType}`,
-    `Page URL: ${window.location.href}`,
     `Page Title: ${document.title}`,
     `Interest: ${interestValue || "not_provided"}`,
     `Referrer: ${document.referrer || "direct"}`,
@@ -132,6 +133,7 @@ function applyContextToForm(form, source, offerType = "early_access") {
     `UTM Term: ${utmParams.utm_term || "-"}`,
   ];
 
+  form.querySelector('[name="_subject"]').value = subject;
   form.querySelector('[name="message"]').value = summaryLines.join("\n");
 }
 
