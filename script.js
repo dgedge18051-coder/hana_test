@@ -101,11 +101,13 @@ function getUtmParams() {
 
 function applyContextToForm(form, source, offerType = "early_access") {
   const utmParams = getUtmParams();
+  const interestValue =
+    form.querySelector('input[name="interest"]')?.value.trim() || "";
 
   form.querySelector('[name="cta_source"]').value = source || "unknown_cta";
   form.querySelector('[name="offer_type"]').value = offerType;
-  form.querySelector('[name="page_url"]').value = window.location.href;
-  form.querySelector('[name="page_title"]').value = document.title;
+  form.querySelector('[name="landing_page_url"]').value = window.location.href;
+  form.querySelector('[name="landing_page_title"]').value = document.title;
   form.querySelector('[name="submitted_at"]').value = new Date().toISOString();
   form.querySelector('[name="referrer"]').value = document.referrer || "";
 
@@ -115,6 +117,22 @@ function applyContextToForm(form, source, offerType = "early_access") {
       input.value = value;
     }
   });
+
+  const summaryLines = [
+    `CTA Source: ${source || "unknown_cta"}`,
+    `Offer Type: ${offerType}`,
+    `Page URL: ${window.location.href}`,
+    `Page Title: ${document.title}`,
+    `Interest: ${interestValue || "not_provided"}`,
+    `Referrer: ${document.referrer || "direct"}`,
+    `UTM Source: ${utmParams.utm_source || "-"}`,
+    `UTM Medium: ${utmParams.utm_medium || "-"}`,
+    `UTM Campaign: ${utmParams.utm_campaign || "-"}`,
+    `UTM Content: ${utmParams.utm_content || "-"}`,
+    `UTM Term: ${utmParams.utm_term || "-"}`,
+  ];
+
+  form.querySelector('[name="message"]').value = summaryLines.join("\n");
 }
 
 function openLeadModal(source, offerType) {
