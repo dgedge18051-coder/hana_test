@@ -25,7 +25,6 @@ function initGA4() {
   }
 
   window.dataLayer = window.dataLayer || [];
-
   window.gtag = function gtag() {
     window.dataLayer.push(arguments);
   };
@@ -68,8 +67,7 @@ function handleHeaderState() {
 }
 
 function scrollToSignup(event) {
-  const sourceLabel =
-    event?.currentTarget?.textContent?.trim() || "unknown_cta";
+  const sourceLabel = event?.currentTarget?.textContent?.trim() || "unknown_cta";
 
   signupSection.scrollIntoView({ behavior: "smooth", block: "start" });
   trackEvent("cta_click", {
@@ -136,7 +134,7 @@ signupForm.addEventListener("submit", (event) => {
   }
 
   if (!interestValue) {
-    setError(interestInput, "관심 영농 분야를 입력해주세요.");
+    setError(interestInput, "관심 분야를 입력해주세요.");
     isValid = false;
   } else {
     clearError(interestInput);
@@ -154,7 +152,7 @@ signupForm.addEventListener("submit", (event) => {
     farming_interest: interestValue,
   });
 
-  alert("감사합니다. Farm-tner에 신청이 완료되었습니다!");
+  alert("감사합니다. Farm-tner 사전 신청이 완료되었습니다!");
   signupForm.reset();
 });
 

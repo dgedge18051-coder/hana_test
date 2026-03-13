@@ -3,318 +3,390 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Farm-tner | 청년 예비농을 위한 영농 준비 플랫폼</title>
+  <title>Farm-tner | 청년 예비농을 위한 창농 준비 플랫폼</title>
   <meta
     name="description"
-    content="Farm-tner는 청년 예비농이 정책, 자금, 교육, 농지 정보를 한곳에서 찾고 더 쉽게 영농 창업을 준비하도록 돕는 플랫폼입니다."
+    content="Farm-tner는 정책, 자금, 교육, 농지 정보와 체크리스트를 한곳에 모아 청년 예비농의 창농 준비를 더 쉽고 명확하게 돕는 플랫폼입니다."
   >
+  <meta name="robots" content="index,follow">
+  <meta name="theme-color" content="#1f7a45">
+  <link rel="canonical" href="https://dgedge18051-coder.github.io/hana_test/">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ko_KR">
+  <meta property="og:site_name" content="Farm-tner">
+  <meta property="og:title" content="Farm-tner | 청년 예비농을 위한 창농 준비 플랫폼">
+  <meta
+    property="og:description"
+    content="정책, 자금, 교육, 농지 정보부터 체크리스트까지. 창농 준비를 한 화면에서 관리하세요."
+  >
+  <meta property="og:url" content="https://dgedge18051-coder.github.io/hana_test/">
   <meta property="og:image" content="https://dgedge18051-coder.github.io/hana_test/og-image.svg">
   <meta property="og:image:type" content="image/svg+xml">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Farm-tner 영농 창업 준비 플랫폼 소개 이미지">
+  <meta property="og:image:alt" content="Farm-tner 창농 준비 플랫폼 소개 이미지">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Farm-tner | 청년 예비농을 위한 창농 준비 플랫폼">
+  <meta
+    name="twitter:description"
+    content="정책, 자금, 교육, 농지 정보부터 체크리스트까지. 창농 준비를 한 화면에서 관리하세요."
+  >
   <meta name="twitter:image" content="https://dgedge18051-coder.github.io/hana_test/og-image.svg">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Farm-tner",
+      "url": "https://dgedge18051-coder.github.io/hana_test/",
+      "inLanguage": "ko-KR",
+      "description": "청년 예비농을 위한 창농 준비 플랫폼"
+    }
+  </script>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="site-bg"></div>
+  <div class="site-noise"></div>
 
   <header class="site-header" id="top">
     <div class="container nav-wrap">
       <a class="brand" href="#top" aria-label="Farm-tner 홈">
-        <span class="brand-badge">F</span>
-        <span class="brand-text">
+        <span class="brand-mark">F</span>
+        <span class="brand-copy">
           <strong>Farm-tner</strong>
-          <small>영농 창업 준비 파트너</small>
+          <small>창농 준비를 한 화면으로</small>
         </span>
       </a>
-
       <nav class="nav-links" aria-label="주요 메뉴">
-        <a href="#problem">문제</a>
-        <a href="#solution">해결</a>
-        <a href="#features">기능</a>
+        <a href="#dashboard">대시보드</a>
+        <a href="#checklist">체크리스트</a>
+        <a href="#flow">준비 흐름</a>
         <a href="#signup">사전 신청</a>
       </nav>
-
-      <button class="nav-button cta-scroll" type="button">무료 가이드 받기</button>
+      <button class="btn btn-primary cta-scroll" type="button">무료 가이드 받기</button>
     </div>
   </header>
 
   <main>
     <section class="hero-section">
-      <div class="container hero-layout">
+      <div class="container hero-grid">
         <div class="hero-copy">
-          <span class="section-pill">청년 예비농을 위한 올인원 준비 플랫폼</span>
-          <h1>영농 창업 정보,<br>아직도 여기저기 찾고 계신가요?</h1>
-          <p class="hero-description">
-            정책, 자금, 교육, 농지 정보까지 흩어진 준비 과정을 한 화면으로 모아
-            더 빠르고 정확하게 영농 창업을 준비하세요.
+          <span class="eyebrow">청년 예비농을 위한 실행형 서비스</span>
+          <h1>창농 준비, 이제<br>한 화면에서 끝내세요</h1>
+          <p class="hero-text">
+            Farm-tner는 흩어진 정책, 자금, 교육, 농지 정보를 모으고 지금 내 준비 상태와
+            다음 할 일을 모바일 화면처럼 명확하게 보여줍니다.
           </p>
-
           <div class="hero-actions">
-            <button class="btn btn-primary cta-scroll" type="button">무료 영농 창업 가이드 받기</button>
-            <a class="btn btn-secondary" href="#solution">서비스 보기</a>
+            <button class="btn btn-primary cta-scroll" type="button">무료 창농 가이드 받기</button>
+            <a class="btn btn-secondary" href="#dashboard">모바일 화면 보기</a>
           </div>
-
-          <div class="hero-metrics">
-            <article class="metric-card">
-              <strong>정책 + 자금 + 교육 + 농지</strong>
-              <span>꼭 필요한 창업 정보를 한곳에 통합</span>
+          <div class="hero-points">
+            <article class="mini-card">
+              <strong>준비 현황 확인</strong>
+              <span>진행률과 남은 할 일을 바로 파악</span>
             </article>
-            <article class="metric-card">
-              <strong>청년 예비농 중심 설계</strong>
-              <span>막막한 준비 과정을 실행 가능한 단계로 정리</span>
+            <article class="mini-card">
+              <strong>실행 중심 체크리스트</strong>
+              <span>정책, 교육, 자금 준비를 단계별로 정리</span>
             </article>
           </div>
         </div>
 
-        <div class="hero-visual" aria-label="Farm-tner 대시보드 미리보기">
-          <div class="hero-orb hero-orb-one"></div>
-          <div class="hero-orb hero-orb-two"></div>
-
-          <div class="dashboard-shell">
-            <div class="dashboard-header">
-              <div>
-                <span class="mini-kicker">준비 현황</span>
-                <h2>내 영농 창업 대시보드</h2>
+        <div class="hero-phones">
+          <article class="phone phone-back">
+            <div class="phone-screen">
+              <div class="app-header">
+                <div class="app-logo">F</div>
+                <div class="app-name">Farm-tner</div>
               </div>
-              <span class="status-chip">준비도 78%</span>
-            </div>
-
-            <div class="readiness-box">
-              <div class="readiness-track">
-                <div class="readiness-fill"></div>
+              <div class="app-tabs">
+                <span class="active">대시보드</span>
+                <span>정책</span>
+                <span>체크리스트</span>
+                <span>상담</span>
               </div>
-              <p>맞춤 정책 추천과 체크리스트로 다음 해야 할 일을 바로 확인하세요.</p>
+              <div class="user-chip">김</div>
+              <div class="app-card">
+                <h3>안녕하세요, 김국기님</h3>
+                <p>창농 준비를 함께합니다</p>
+              </div>
+              <div class="app-card progress-card">
+                <div class="card-head">
+                  <strong>창농 준비 진행률</strong>
+                  <span>45/60 항목</span>
+                </div>
+                <div class="ring-wrap">
+                  <div class="ring">
+                    <div class="ring-center"><strong>75%</strong></div>
+                  </div>
+                </div>
+              </div>
             </div>
+          </article>
 
-            <div class="dashboard-grid">
-              <article class="dashboard-panel">
-                <span>맞춤 정책</span>
-                <strong>12개 추천</strong>
-              </article>
-              <article class="dashboard-panel">
-                <span>확인 가능한 농지</span>
-                <strong>8개 후보</strong>
-              </article>
-              <article class="dashboard-panel">
-                <span>수강 필요 교육</span>
-                <strong>2개 과정</strong>
-              </article>
-              <article class="dashboard-panel">
-                <span>전문가 상담</span>
-                <strong>연결 가능</strong>
-              </article>
+          <article class="phone phone-front">
+            <div class="phone-screen">
+              <div class="app-header">
+                <div class="app-logo">F</div>
+                <div class="app-name">Farm-tner</div>
+              </div>
+              <div class="app-tabs">
+                <span>대시보드</span>
+                <span>정책</span>
+                <span class="active">체크리스트</span>
+                <span>상담</span>
+              </div>
+              <div class="user-chip">김</div>
+              <div class="app-card checklist-preview">
+                <div class="step-title">Step 1: 기초 준비</div>
+                <div class="check-item done">
+                  <div>
+                    <strong>창농 동향 조사</strong>
+                    <p>완료: 2024.01.15</p>
+                  </div>
+                  <span class="state done">완료</span>
+                </div>
+                <div class="tag-row">
+                  <span>정책</span>
+                  <span>교육</span>
+                  <span>가이드</span>
+                </div>
+                <div class="check-item done">
+                  <div>
+                    <strong>재배 작물 선택</strong>
+                    <p>완료: 2024.02.10</p>
+                  </div>
+                  <span class="state done">완료</span>
+                </div>
+                <div class="check-item pending">
+                  <div>
+                    <strong>예상 비용 계산</strong>
+                    <p>다음 단계로 추천</p>
+                  </div>
+                  <span class="state pending">미시작</span>
+                </div>
+              </div>
             </div>
-          </div>
-
-          <div class="floating-note">
-            <span class="mini-kicker">이번 주 추천 액션</span>
-            <p>지역 청년농 금융지원 프로그램 신청 조건을 먼저 확인해보세요.</p>
+          </article>
+          <div class="floating-badge">
+            <span>이번 주 추천</span>
+            <strong>청년농 정책 3개 확인</strong>
           </div>
         </div>
       </div>
     </section>
 
     <section class="trust-strip">
-      <div class="container">
-        <p>기관별로 흩어진 영농 창업 정보를, 예비농의 준비 흐름에 맞춰 다시 정리했습니다.</p>
+      <div class="container trust-row">
+        <span>문제 인식</span>
+        <p>청년 예비농은 창농 준비 정보를 여러 기관에서 따로 찾아야 합니다.</p>
       </div>
     </section>
 
-    <section class="content-section" id="problem">
-      <div class="container split-section">
-        <div class="section-head">
-          <span class="section-pill">Problem</span>
-          <h2>영농 창업은 생각보다 훨씬 복잡합니다.</h2>
-          <p>
-            청년 예비농은 창업을 준비하면서 여러 사이트를 오가며 핵심 정보를 직접 모아야 합니다.
-          </p>
-        </div>
-
-        <div class="glass-card issue-card">
-          <div class="issue-grid">
-            <article>농업 정책</article>
-            <article>농지 정보</article>
-            <article>창업 교육</article>
-            <article>금융 지원</article>
-          </div>
-          <p class="section-note">
-            정보가 기관별로 흩어져 있어 어디서부터 준비해야 할지 판단하기 어렵습니다.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section class="content-section section-accent">
-      <div class="container split-section reverse">
-        <div class="section-head">
-          <span class="section-pill">Agitate</span>
-          <h2>정보가 흩어져 있으면, 준비는 늦어지고 실수는 늘어납니다.</h2>
-        </div>
-
-        <div class="glass-card risk-card">
-          <article class="risk-item">
-            <strong>준비 기간이 길어집니다</strong>
-            <p>비슷한 정보를 반복해서 찾느라 중요한 실행 시점을 놓치게 됩니다.</p>
-          </article>
-          <article class="risk-item">
-            <strong>지원 기회를 놓칠 수 있습니다</strong>
-            <p>조건에 맞는 정책이나 금융 프로그램을 제때 확인하지 못할 수 있습니다.</p>
-          </article>
-          <article class="risk-item">
-            <strong>의사결정이 불안해집니다</strong>
-            <p>검증되지 않은 정보에 의존하면 초기 창업 리스크가 커집니다.</p>
-          </article>
-          <button class="btn btn-soft cta-scroll" type="button">지금 가이드 받기</button>
-        </div>
-      </div>
-    </section>
-
-    <section class="content-section" id="solution">
-      <div class="container split-section">
-        <div class="section-head">
-          <span class="section-pill">Solution</span>
-          <h2>Farm-tner를 만나보세요</h2>
-          <p>
-            Farm-tner는 청년 예비농이 영농 창업 전 꼭 확인해야 할 정보를 한곳에서 찾을 수 있도록 만든 통합 플랫폼입니다.
-          </p>
-        </div>
-
-        <div class="glass-card solution-card">
-          <div class="solution-grid">
-            <article class="solution-item">
-              <span class="solution-tag">정책</span>
-              <p>내 상황에 맞는 정부 지원 정책을 더 빠르게 확인</p>
-            </article>
-            <article class="solution-item">
-              <span class="solution-tag">자금</span>
-              <p>농업 금융 프로그램과 지원 조건을 한눈에 비교</p>
-            </article>
-            <article class="solution-item">
-              <span class="solution-tag">교육</span>
-              <p>필수 교육 및 창업 준비 과정을 체계적으로 정리</p>
-            </article>
-            <article class="solution-item">
-              <span class="solution-tag">농지</span>
-              <p>농지 정보까지 한 흐름 안에서 탐색 가능</p>
-            </article>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="content-section" id="features">
-      <div class="container">
-        <div class="section-center">
-          <span class="section-pill">Features</span>
-          <h2>영농 창업 준비를 더 쉽게 만드는 핵심 기능</h2>
-          <p>막연한 정보 탐색이 아니라, 실제 실행으로 이어지는 준비 경험을 제공합니다.</p>
-        </div>
-
-        <div class="feature-grid">
-          <article class="feature-card">
-            <div class="feature-number">01</div>
-            <h3>통합 영농 정보</h3>
-            <p>정책, 금융, 농지, 교육 정보를 하나의 플랫폼에서 탐색할 수 있습니다.</p>
-          </article>
-          <article class="feature-card">
-            <div class="feature-number">02</div>
-            <h3>창업 준비 체크리스트</h3>
-            <p>영농 창업 과정을 단계별로 정리해 준비 누락을 줄여줍니다.</p>
-          </article>
-          <article class="feature-card">
-            <div class="feature-number">03</div>
-            <h3>맞춤 정책 추천</h3>
-            <p>내 상황에 적합한 정책과 지원 프로그램을 빠르게 찾을 수 있습니다.</p>
-          </article>
-          <article class="feature-card">
-            <div class="feature-number">04</div>
-            <h3>전문가 상담 연결</h3>
-            <p>영농 창업 전 필요한 상담을 전문가와 연결해 더 안심하고 준비할 수 있습니다.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="content-section">
-      <div class="container">
-        <div class="section-center">
-          <span class="section-pill">Social Proof</span>
-          <h2>청년 예비농이 실제로 느끼는 어려움</h2>
-        </div>
-
-        <div class="stats-grid">
-          <article class="stat-card">
-            <strong>70%</strong>
-            <p>청년농은 창업 정보를 찾는 과정이 어렵다고 느낍니다.</p>
-          </article>
-          <article class="stat-card">
-            <strong>65%</strong>
-            <p>영농 시작 전 전문가 상담이 꼭 필요하다고 생각합니다.</p>
-          </article>
-          <article class="stat-card">
-            <strong>1곳</strong>
-            <p>정책, 자금, 교육, 농지 정보를 한 번에 확인할 수 있는 경험이 필요합니다.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="content-section">
-      <div class="container">
-        <div class="final-banner">
-          <div>
-            <span class="section-pill">Start Now</span>
-            <h2>오늘부터 영농 창업 준비를 더 명확하게 시작하세요.</h2>
-            <p>흩어진 정보 탐색에서 벗어나, 실제 준비 행동으로 바로 연결해보세요.</p>
-          </div>
-
-          <div class="final-actions">
-            <button class="btn btn-primary cta-scroll" type="button">창업 가이드 받기</button>
-            <button class="btn btn-secondary cta-scroll" type="button">얼리 액세스 신청</button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="content-section signup-section" id="signup">
-      <div class="container signup-layout">
-        <div class="signup-copy">
-          <span class="section-pill">Early Access</span>
-          <h2>무료 창업 가이드를 받고 Farm-tner를 가장 먼저 만나보세요</h2>
-          <p>
-            이름과 이메일, 관심 분야만 남기면 영농 창업 준비에 도움이 되는 정보를 먼저 받아볼 수 있습니다.
-          </p>
-          <ul class="benefit-list">
-            <li>영농 창업 준비 핵심 체크포인트 제공</li>
-            <li>정책 및 자금 정보 업데이트 소식 안내</li>
-            <li>Farm-tner 사전 체험 기회 제공</li>
+    <section class="feature-story" id="dashboard">
+      <div class="container story-grid">
+        <div class="story-copy">
+          <span class="section-label">Dashboard</span>
+          <h2>지금 내 창농 준비 상태를 바로 확인</h2>
+          <p>준비가 얼마나 진행됐는지, 어떤 정책이 맞는지, 다음에 무엇을 해야 하는지 한 화면에서 확인할 수 있어 막막함이 줄어듭니다.</p>
+          <ul class="story-list">
+            <li>준비 진행률을 시각적으로 확인</li>
+            <li>개인화된 인사와 현재 상태 노출</li>
+            <li>다음 액션을 바로 연결</li>
           </ul>
         </div>
+        <div class="story-visual">
+          <article class="phone single-phone">
+            <div class="phone-screen">
+              <div class="app-header">
+                <div class="app-logo">F</div>
+                <div class="app-name">Farm-tner</div>
+              </div>
+              <div class="app-tabs">
+                <span class="active">대시보드</span>
+                <span>정책</span>
+                <span>체크리스트</span>
+                <span>상담</span>
+              </div>
+              <div class="user-chip">김</div>
+              <div class="app-card">
+                <h3>안녕하세요, 김국기님</h3>
+                <p>창농 준비를 함께합니다</p>
+              </div>
+              <div class="app-card progress-card">
+                <div class="card-head">
+                  <strong>창농 준비 진행률</strong>
+                  <span>45/60 항목</span>
+                </div>
+                <div class="ring-wrap">
+                  <div class="ring">
+                    <div class="ring-center"><strong>75%</strong></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
 
+    <section class="feature-story alt" id="checklist">
+      <div class="container story-grid reverse">
+        <div class="story-copy">
+          <span class="section-label">Checklist</span>
+          <h2>복잡한 창농 준비는 체크리스트로 정리</h2>
+          <p>무엇을 끝냈고 무엇이 남았는지 단계별로 보이기 때문에, 준비 과정을 감으로 하지 않고 실행 가능한 리스트로 관리할 수 있습니다.</p>
+          <ul class="story-list">
+            <li>완료, 진행 중, 미시작 상태를 직관적으로 표시</li>
+            <li>정책, 교육, 가이드 리소스를 항목별 연결</li>
+            <li>중요한 단계 누락을 줄이는 구조</li>
+          </ul>
+        </div>
+        <div class="story-visual dual">
+          <article class="phone stacked-phone">
+            <div class="phone-screen">
+              <div class="app-header">
+                <div class="app-logo">F</div>
+                <div class="app-name">Farm-tner</div>
+              </div>
+              <div class="app-tabs">
+                <span>대시보드</span>
+                <span>정책</span>
+                <span class="active">체크리스트</span>
+                <span>상담</span>
+              </div>
+              <div class="user-chip">김</div>
+              <div class="app-card task-card">
+                <div class="check-item done compact">
+                  <div><strong>재배 작물 선택</strong></div>
+                  <span class="state done">완료</span>
+                </div>
+                <div class="check-item pending compact">
+                  <div><strong>예상 비용 계산</strong></div>
+                  <span class="state pending">미시작</span>
+                </div>
+                <button class="inline-link" type="button">전체 보기 →</button>
+              </div>
+              <div class="quick-actions">
+                <button class="qa blue" type="button">상담 예약</button>
+                <button class="qa green" type="button">정책 보기</button>
+                <button class="qa orange" type="button">교육 검색</button>
+                <button class="qa gray" type="button">준비 체크</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="phone detail-phone">
+            <div class="phone-screen">
+              <div class="app-header">
+                <div class="app-logo">F</div>
+                <div class="app-name">Farm-tner</div>
+              </div>
+              <div class="app-tabs">
+                <span>대시보드</span>
+                <span>정책</span>
+                <span class="active">체크리스트</span>
+                <span>상담</span>
+              </div>
+              <div class="user-chip">김</div>
+              <div class="step-board">
+                <h3>Step 1: 기초 준비</h3>
+                <div class="step-item">
+                  <div class="step-check">✓</div>
+                  <div class="step-copy">
+                    <strong>창농 동향 조사</strong>
+                    <p>완료: 2024.01.15</p>
+                    <div class="tag-row"><span>정책</span><span>교육</span><span>가이드</span></div>
+                  </div>
+                  <span class="state done">완료</span>
+                </div>
+                <div class="step-item">
+                  <div class="step-check">✓</div>
+                  <div class="step-copy">
+                    <strong>재배 작물 선택</strong>
+                    <p>완료: 2024.02.10</p>
+                    <div class="tag-row"><span>정책</span><span>교육</span></div>
+                  </div>
+                  <span class="state done">완료</span>
+                </div>
+                <div class="step-item">
+                  <div class="step-check soft">○</div>
+                  <div class="step-copy">
+                    <strong>예상 비용 계산</strong>
+                    <p>다음 단계 추천 항목</p>
+                    <div class="tag-row"><span>금융</span><span>가이드</span></div>
+                  </div>
+                  <span class="state pending">미시작</span>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="flow-section" id="flow">
+      <div class="container">
+        <div class="section-center">
+          <span class="section-label">Flow</span>
+          <h2>Farm-tner로 창농 준비가 진행되는 방식</h2>
+          <p>정보를 검색하는 데서 끝나지 않고, 실제 준비 행동으로 이어지게 설계했습니다.</p>
+        </div>
+        <div class="flow-grid">
+          <article class="flow-card"><span>01</span><h3>준비 현황 파악</h3><p>현재 진행률과 남은 할 일을 대시보드에서 먼저 확인합니다.</p></article>
+          <article class="flow-card"><span>02</span><h3>체크리스트 실행</h3><p>창농 준비 단계를 순서대로 진행하며 누락을 줄입니다.</p></article>
+          <article class="flow-card"><span>03</span><h3>정책·교육 연결</h3><p>각 단계에 필요한 정책, 교육, 자금 정보를 바로 탐색합니다.</p></article>
+          <article class="flow-card"><span>04</span><h3>상담까지 연결</h3><p>판단이 어려운 순간에는 전문가 상담으로 다음 결정을 돕습니다.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="proof-section">
+      <div class="container proof-banner">
+        <div>
+          <span class="section-label">Why Now</span>
+          <h2>정보를 모으는 서비스가 아니라, 준비를 끝내게 하는 서비스</h2>
+          <p>흩어진 정보를 다시 찾게 하지 않고, 창농 준비의 흐름을 제품 경험으로 설계했습니다.</p>
+        </div>
+        <div class="proof-stats">
+          <article><strong>75%</strong><span>진행률처럼 상태를 시각화</span></article>
+          <article><strong>Step 기반</strong><span>체크리스트 중심 준비 경험</span></article>
+          <article><strong>정책·교육·자금</strong><span>실행 리소스와 바로 연결</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="signup-section" id="signup">
+      <div class="container signup-grid">
+        <div class="signup-copy">
+          <span class="section-label">Early Access</span>
+          <h2>무료 창농 가이드를 받고 가장 먼저 Farm-tner를 만나보세요</h2>
+          <p>이름과 이메일, 관심 분야를 남기면 창농 준비에 필요한 핵심 정보를 먼저 받아볼 수 있습니다.</p>
+          <ul class="story-list">
+            <li>핵심 창농 준비 단계 정리본 제공</li>
+            <li>정책 및 자금 업데이트 우선 안내</li>
+            <li>얼리 액세스 대상 우선 초대</li>
+          </ul>
+        </div>
         <form class="signup-form" id="signup-form" novalidate>
           <div class="form-group">
             <label for="name">이름</label>
             <input id="name" name="name" type="text" placeholder="이름을 입력하세요">
             <small class="error-message"></small>
           </div>
-
           <div class="form-group">
             <label for="email">이메일</label>
             <input id="email" name="email" type="email" placeholder="example@email.com">
             <small class="error-message"></small>
           </div>
-
           <div class="form-group">
-            <label for="interest">관심 영농 분야</label>
+            <label for="interest">관심 분야</label>
             <input id="interest" name="interest" type="text" placeholder="스마트팜, 시설원예, 과수 재배 등">
             <small class="error-message"></small>
           </div>
-
-          <button class="btn btn-primary btn-full" type="submit">Farm-tner 신청하기</button>
-          <p class="form-caption">입력해주신 정보는 사전 신청 안내 목적에만 사용됩니다.</p>
+          <button class="btn btn-primary btn-full" type="submit">사전 신청하기</button>
+          <p class="form-note">입력해주신 정보는 사전 신청 및 안내 목적으로만 사용됩니다.</p>
         </form>
       </div>
     </section>
