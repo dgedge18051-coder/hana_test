@@ -63,7 +63,7 @@
         <a href="#flow">준비 흐름</a>
         <a href="#signup">사전 신청</a>
       </nav>
-      <button class="btn btn-primary cta-scroll" type="button">무료 가이드 받기</button>
+      <button class="btn btn-primary cta-scroll" type="button" data-cta-source="nav_cta" data-offer-type="free_guide">무료 가이드 받기</button>
     </div>
   </header>
 
@@ -78,8 +78,8 @@
             다음 할 일을 모바일 화면처럼 명확하게 보여줍니다.
           </p>
           <div class="hero-actions">
-            <button class="btn btn-primary cta-scroll" type="button">무료 창농 가이드 받기</button>
-            <a class="btn btn-secondary" href="#dashboard">모바일 화면 보기</a>
+            <button class="btn btn-primary cta-scroll" type="button" data-cta-source="hero_primary" data-offer-type="free_guide">무료 창농 가이드 받기</button>
+            <a class="btn btn-secondary" href="#dashboard" data-cta-source="hero_secondary">모바일 화면 보기</a>
           </div>
           <div class="hero-points">
             <article class="mini-card">
@@ -195,6 +195,7 @@
             <li>개인화된 인사와 현재 상태 노출</li>
             <li>다음 액션을 바로 연결</li>
           </ul>
+          <button class="btn btn-primary cta-scroll section-cta" type="button" data-cta-source="dashboard_section" data-offer-type="product_demo">이 화면 기반으로 신청하기</button>
         </div>
         <div class="story-visual">
           <article class="phone single-phone">
@@ -242,6 +243,7 @@
             <li>정책, 교육, 가이드 리소스를 항목별 연결</li>
             <li>중요한 단계 누락을 줄이는 구조</li>
           </ul>
+          <button class="btn btn-primary cta-scroll section-cta" type="button" data-cta-source="checklist_section" data-offer-type="checklist_experience">체크리스트 기반으로 신청하기</button>
         </div>
         <div class="story-visual dual">
           <article class="phone stacked-phone">
@@ -348,6 +350,7 @@
           <span class="section-label">Why Now</span>
           <h2>정보를 모으는 서비스가 아니라, 준비를 끝내게 하는 서비스</h2>
           <p>흩어진 정보를 다시 찾게 하지 않고, 창농 준비의 흐름을 제품 경험으로 설계했습니다.</p>
+          <button class="btn btn-primary cta-scroll section-cta" type="button" data-cta-source="final_cta" data-offer-type="early_access">지금 사전 신청하기</button>
         </div>
         <div class="proof-stats">
           <article><strong>75%</strong><span>진행률처럼 상태를 시각화</span></article>
@@ -369,7 +372,19 @@
             <li>얼리 액세스 대상 우선 초대</li>
           </ul>
         </div>
-        <form class="signup-form" id="signup-form" novalidate>
+        <form class="signup-form lead-form" id="signup-form" novalidate>
+          <input type="hidden" name="cta_source" value="signup_section">
+          <input type="hidden" name="offer_type" value="early_access">
+          <input type="hidden" name="page_url">
+          <input type="hidden" name="page_title">
+          <input type="hidden" name="submitted_at">
+          <input type="hidden" name="referrer">
+          <input type="hidden" name="utm_source">
+          <input type="hidden" name="utm_medium">
+          <input type="hidden" name="utm_campaign">
+          <input type="hidden" name="utm_content">
+          <input type="hidden" name="utm_term">
+          <input type="text" name="_gotcha" class="honeypot" tabindex="-1" autocomplete="off">
           <div class="form-group">
             <label for="name">이름</label>
             <input id="name" name="name" type="text" placeholder="이름을 입력하세요">
@@ -385,12 +400,56 @@
             <input id="interest" name="interest" type="text" placeholder="스마트팜, 시설원예, 과수 재배 등">
             <small class="error-message"></small>
           </div>
-          <button class="btn btn-primary btn-full" type="submit">사전 신청하기</button>
+          <button class="btn btn-primary btn-full submit-button" type="submit">사전 신청하기</button>
           <p class="form-note">입력해주신 정보는 사전 신청 및 안내 목적으로만 사용됩니다.</p>
+          <p class="form-status" aria-live="polite"></p>
         </form>
       </div>
     </section>
   </main>
+
+  <div class="modal-overlay" id="lead-modal" aria-hidden="true">
+    <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="lead-modal-title">
+      <button class="modal-close" id="modal-close" type="button" aria-label="닫기">×</button>
+      <div class="modal-copy">
+        <span class="section-label">Quick Lead Form</span>
+        <h2 id="lead-modal-title">무료 창농 가이드를 받고 사전 신청하세요</h2>
+        <p id="lead-modal-description">CTA를 누른 맥락에 맞춰 바로 신청할 수 있도록 간단한 폼으로 연결했습니다.</p>
+      </div>
+      <form class="signup-form lead-form modal-form" id="modal-signup-form" novalidate>
+        <input type="hidden" name="cta_source" value="modal_unknown">
+        <input type="hidden" name="offer_type" value="free_guide">
+        <input type="hidden" name="page_url">
+        <input type="hidden" name="page_title">
+        <input type="hidden" name="submitted_at">
+        <input type="hidden" name="referrer">
+        <input type="hidden" name="utm_source">
+        <input type="hidden" name="utm_medium">
+        <input type="hidden" name="utm_campaign">
+        <input type="hidden" name="utm_content">
+        <input type="hidden" name="utm_term">
+        <input type="text" name="_gotcha" class="honeypot" tabindex="-1" autocomplete="off">
+        <div class="form-group">
+          <label for="modal-name">이름</label>
+          <input id="modal-name" name="name" type="text" placeholder="이름을 입력하세요">
+          <small class="error-message"></small>
+        </div>
+        <div class="form-group">
+          <label for="modal-email">이메일</label>
+          <input id="modal-email" name="email" type="email" placeholder="example@email.com">
+          <small class="error-message"></small>
+        </div>
+        <div class="form-group">
+          <label for="modal-interest">관심 분야</label>
+          <input id="modal-interest" name="interest" type="text" placeholder="스마트팜, 시설원예, 과수 재배 등">
+          <small class="error-message"></small>
+        </div>
+        <button class="btn btn-primary btn-full submit-button" type="submit">무료 가이드 받고 신청하기</button>
+        <p class="form-note">제출하면 Formspree로 안전하게 전달되고, 전환 이벤트도 함께 기록됩니다.</p>
+        <p class="form-status" aria-live="polite"></p>
+      </form>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>
