@@ -53,3 +53,16 @@ git push -u origin main
 - `script.js`: 스티키 헤더, CTA 스크롤, 폼 검증
 - `vercel.json`: 정적 배포용 헤더 및 캐시 설정
 
+## Analytics Setup
+
+`script.js` 상단의 아래 placeholder 값을 실제 값으로 바꾸면 됩니다.
+
+- `ga4MeasurementId`: 예시 `G-XXXXXXXXXX`
+- `hotjarSiteId`: 예시 `1234567`
+- `hotjarVersion`: 기본값 `6`
+
+현재 추적되는 이벤트:
+
+- `cta_click`
+- `signup_validation_failed`
+- `signup_submit`
