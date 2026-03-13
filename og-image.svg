@@ -1,0 +1,48 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" rx="40" fill="#F5FBF4"/>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="1050" cy="120" r="160" fill="#A8DBB6" fill-opacity="0.28"/>
+  <circle cx="170" cy="540" r="140" fill="#3FA35F" fill-opacity="0.16"/>
+  <rect x="70" y="70" width="1060" height="490" rx="36" fill="white" fill-opacity="0.78"/>
+  <rect x="70.5" y="70.5" width="1059" height="489" rx="35.5" stroke="#16452A" stroke-opacity="0.08"/>
+
+  <rect x="120" y="124" width="76" height="76" rx="22" fill="url(#brand)"/>
+  <path d="M154.164 144H184V155.001H167.105V163.217H182.578V174.002H167.105V193H154.164V144Z" fill="white"/>
+
+  <text x="120" y="260" fill="#102019" font-family="'Segoe UI', 'Malgun Gothic', sans-serif" font-size="62" font-weight="800">Farm-tner</text>
+  <text x="120" y="324" fill="#102019" font-family="'Segoe UI', 'Malgun Gothic', sans-serif" font-size="34" font-weight="700">청년 예비농을 위한 영농 창업 준비 플랫폼</text>
+  <text x="120" y="384" fill="#5A6C63" font-family="'Segoe UI', 'Malgun Gothic', sans-serif" font-size="26" font-weight="500">정책, 자금, 교육, 농지 정보를 한곳에서 찾고</text>
+  <text x="120" y="422" fill="#5A6C63" font-family="'Segoe UI', 'Malgun Gothic', sans-serif" font-size="26" font-weight="500">더 빠르고 정확하게 영농 창업을 준비하세요.</text>
+
+  <rect x="120" y="468" width="290" height="58" rx="29" fill="#1F7A45"/>
+  <text x="156" y="505" fill="white" font-family="'Segoe UI', 'Malgun Gothic', sans-serif" font-size="22" font-weight="700">영농 창업 가이드 제공</text>
+
+  <rect x="700" y="150" width="320" height="250" rx="28" fill="#FFFFFF"/>
+  <rect x="700.5" y="150.5" width="319" height="249" rx="27.5" stroke="#16452A" stroke-opacity="0.08"/>
+  <text x="730" y="194" fill="#1F7A45" font-family="'Segoe UI', sans-serif" font-size="18" font-weight="700">STARTUP READINESS</text>
+  <text x="730" y="240" fill="#102019" font-family="'Segoe UI', 'Malgun Gothic', sans-serif" font-size="34" font-weight="800">준비도 78%</text>
+  <rect x="730" y="268" width="260" height="16" rx="8" fill="#E3EFE5"/>
+  <rect x="730" y="268" width="204" height="16" rx="8" fill="url(#bar)"/>
+  <rect x="730" y="314" width="118" height="66" rx="18" fill="#F3F8F1"/>
+  <rect x="872" y="314" width="118" height="66" rx="18" fill="#F3F8F1"/>
+  <text x="748" y="342" fill="#5A6C63" font-family="'Segoe UI', 'Malgun Gothic', sans-serif" font-size="16" font-weight="600">맞춤 정책</text>
+  <text x="748" y="366" fill="#102019" font-family="'Segoe UI', 'Malgun Gothic', sans-serif" font-size="22" font-weight="800">12개</text>
+  <text x="890" y="342" fill="#5A6C63" font-family="'Segoe UI', 'Malgun Gothic', sans-serif" font-size="16" font-weight="600">농지 후보</text>
+  <text x="890" y="366" fill="#102019" font-family="'Segoe UI', 'Malgun Gothic', sans-serif" font-size="22" font-weight="800">8개</text>
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F7FBF5"/>
+      <stop offset="0.55" stop-color="#EEF6EB"/>
+      <stop offset="1" stop-color="#F4FAF2"/>
+    </linearGradient>
+    <linearGradient id="brand" x1="120" y1="124" x2="196" y2="200" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1F7A45"/>
+      <stop offset="1" stop-color="#48AD67"/>
+    </linearGradient>
+    <linearGradient id="bar" x1="730" y1="276" x2="934" y2="276" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1F7A45"/>
+      <stop offset="1" stop-color="#7BCB90"/>
+    </linearGradient>
+  </defs>
+</svg>
